@@ -24,6 +24,22 @@ const app = new Vue({
 			if (this.newMemberName === "") {
 				return;
 			}
+			if(this.newMemberName === 'Vinita'){
+				alert("She cannot play");
+				return;
+			}
+			else if(this.newMemberName ==='Vinny'){
+				alert("She cannot play");
+				return;
+			}
+			else if(this.newMemberName ==='vinny'){
+				alert("She cannot play");
+				return;
+			}
+			else if(this.newMemberName ==='vinita'){
+				alert("She cannot play");
+				return;
+			}
 			this.gamers.push(new Gamer(this.newMemberName));
 			this.newMemberName = "";
 		},
